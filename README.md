@@ -18,11 +18,11 @@ Develop and evaluate machine learning models to predict the `total_UPDRS` score 
 
 ## Models Tested
 
-| Model                      | R² Score | MAE   | RMSE  |
-|----------------------------|----------|-------|--------|
-| Linear Regression          | 0.17     | —     | —      |
-| Random Forest Regressor    | 0.95     | 0.72  | 1.61   |
-| Gradient Boosting Regressor | ~0.94    | —     | —      |
+| Model                     R² Score  MAE    RMSE  
+
+Linear Regression           0.17    
+Random Forest Regressor     0.95     0.72    1.61  
+Gradient Boosting Regressor 0.95   
 
 Full hyperparameter tuning was performed using `GridSearchCV` with 5-fold cross-validation. The best-performing model was Random Forest.
 
@@ -35,8 +35,7 @@ Full hyperparameter tuning was performed using `GridSearchCV` with 5-fold cross-
 
 ## Reproducibility
 
-- All code is in `02_Modeling.ipynb`
-- `requirements.txt` included for environment setup
+- All code is in `Parkinsons_UPDRS_MLE.ipynb`
 - Random seed fixed across models
 - Training/testing split, cross-validation, and metrics are fully reproducible
 
